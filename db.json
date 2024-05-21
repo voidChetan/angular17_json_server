@@ -1,0 +1,17 @@
+{
+    "userList": [
+        { "userId": 121,"userName": "ABC","fName":"ABC" ,"lName":"ABC","city":"Pune","state":"GOA","zipCode":"112233"},
+        { "userId": 121,"userName": "DEF","fName":"ABC" ,"lName":"ABC","city":"Mumbai","state":"PUN","zipCode":"112233"},
+        { "userId": 121,"userName": "LMN","fName":"ABC" ,"lName":"ABC","city":"Mumbai","state":"MAH","zipCode":"112233"},
+        { "userId": 121,"userName": "XYZ","fName":"ABC" ,"lName":"ABC","city":"Thane","state":"PUN","zipCode":"112233"}
+    ],
+    "cityList": ["Pune","Mumbai","Thane"],
+    "stateList": ["MAH","GOA","PUN"],
+    "createUser": { 
+        "userId": 121,"userName": "ABC","fName":"ABC" ,"lName":"ABC","city":"","state":"","zipCode":"112233"
+    },
+    "updateUser": { "userId": 121,"userName": "ABC","fName":"ABC" ,"lName":"ABC","city":"","state":"","zipCode":"112233"
+    }, 
+    "deleteUser": {  "userId": 121,"userName": "ABC","fName":"ABC" ,"lName":"ABC","city":"","state":"","zipCode":"112233" 
+    }
+}
