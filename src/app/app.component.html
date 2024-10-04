@@ -34,7 +34,7 @@
                 <td>{{item.city}}</td>
                 <td>{{item.state}}</td> 
                 <td>
-                  <button class="btn btn-primary btn-sm" (click)="onEdit(item)">Edit</button>
+                  <button class="btn btn-primary btn-sm">Edit</button>
                   <button class="btn btn-danger btn-sm" (click)="onDelete(item.userId)">Delete</button>
                 </td>
               </tr> 
@@ -123,4 +123,11 @@
       </div>
     </div>
   </div>
+</div>
+
+<div appResizable [rightElement]="rightDiv" class="left-div">
+  Left div
+</div>
+<div #rightDiv class="right-div">
+  Right div
 </div>

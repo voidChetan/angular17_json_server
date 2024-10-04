@@ -1,18 +1,19 @@
 import { AsyncPipe } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
-import { Component, inject, OnInit } from '@angular/core';
+import { Component, ElementRef, inject, OnInit, ViewChild } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterOutlet } from '@angular/router';
 import { Observable } from 'rxjs';
+import { ResizableDirective } from './resizable.directive';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, FormsModule, AsyncPipe],
+  imports: [RouterOutlet, FormsModule, AsyncPipe,ResizableDirective],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent  implements OnInit{
-
+  @ViewChild('rightDiv', { static: true }) rightDiv!: ElementRef;
   userObj: USER = new USER();
 
   http= inject(HttpClient);

@@ -1,0 +1,14 @@
+.left-div {
+    width: 200px;
+    height: 100vh;
+    background-color: lightblue;
+    border-right: 2px solid darkblue;
+    display: inline-block;
+  }
+  
+  .right-div {
+    width: calc(100% - 200px);
+    height: 100vh;
+    background-color: lightgray;
+    display: inline-block;
+  }
